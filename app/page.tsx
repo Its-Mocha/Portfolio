@@ -11,12 +11,12 @@ export default function Home() {
           <div className="relative w-48 h-48 rounded-2xl border-2 border-cyber-blue shadow-glow overflow-hidden group">
             <Image
              src="/me-1.jpeg" 
-  alt="Joseph Ducharme"
-  width={192}   // This matches w-48 (48 * 4)
-  height={192}  // This matches h-48
-  quality={100} // Force Next.js to use maximum quality
-  priority      // Ensure it's not "lazy loaded"
-  className="rounded-2xl border-2 border-cyber-blue shadow-glow object-cover -translate-y-4"
+            alt="Joseph Ducharme"
+            width={192}   // This matches w-48 (48 * 4)
+            height={192}  // This matches h-48
+            quality={100} // Force Next.js to use maximum quality
+            priority      // Ensure it's not "lazy loaded"
+            className="rounded-2xl border-2 border-cyber-blue shadow-glow object-cover -translate-y-4"
             />
           </div>
 
@@ -75,12 +75,18 @@ export default function Home() {
         </div>
 
         {/* ABOUT ME SECTION */}
-        <section className="prose prose-invert max-w-none">
-          <p className="text-lg text-slate-400 leading-relaxed">
-            I am an <strong className="text-white">IT Support Engineer</strong> with a B.S. in Computer Science 
-            specializing in identity management at <strong className="text-cyber-blue">Ducommun AeroStructures</strong>. 
-            I manage security for 200+ endpoints, leading CMMC compliance and MFA deployments.
-          </p>
+        <section className="space-y-4 text-gray-400 leading-relaxed">
+         <p>
+          I am an <strong className="text-white">IT Technician</strong> at <strong className="text-cyber-blue">Ducommun AeroStructures</strong> armed with a B.S. in Computer Science. 
+          Currently, I specialize in <strong className="text-white">Identity Management</strong> and security compliance. 
+          I play a key role in hardening our infrastructure by driving CMMC standards and deploying Multi-Factor Authentication (MFA) across the organization.
+        </p>
+        
+        <p>
+          Beyond security, I bring hands-on operational experience managing <strong>200+ endpoints</strong>. 
+          From leading large-scale <strong className="text-white">Windows 11 migrations</strong> to administering Active Directory environments, I bridge the gap between complex backend systems and end-user needs. 
+          I pride myself on a <strong className="text-cyber-blue">"Do whatever it takes"</strong> attitude, combining deep diagnostic skills with the ability to communicate technical solutions clearly.
+        </p>
         </section>
 
         {/* SKILLS GRID */}
@@ -112,7 +118,7 @@ export default function Home() {
         <footer className="pt-8 border-t border-slate-800 text-sm">
           <h3 className="text-white font-bold mb-4">Education & Certifications</h3>
           <p><strong>B.S. in Computer Science</strong> - SNHU</p>
-          <p className="text-cyber-blue"><strong>CompTIA Security+</strong> (In Progress - 2025)</p>
+          <p className="text-cyber-blue"><strong>CompTIA Security+</strong> (In Progress - 2026)</p>
           <p>Google Networking Fundamentals</p>
         </footer>
       </div>
