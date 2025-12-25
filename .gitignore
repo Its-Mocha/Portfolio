@@ -3,7 +3,8 @@
 # Keys
 .env
 
-/public
+#ignore notes
+note.txt
 
 # dependencies
 /node_modules
