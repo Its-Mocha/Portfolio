@@ -72,7 +72,7 @@ export default function StatsPage() {
 
       {/* 2. NAVIGATION OVERLAY */}
       <div className="absolute top-0 w-full p-6 flex justify-between items-center z-20">
-        <Link href="/" className="text-[10px] text-zinc-500 hover:text-red-600 transition-colors uppercase tracking-[0.3em] border border-zinc-800 px-3 py-1 bg-black/50">
+        <Link href="/" className="text-[10px] text-zinc-500 hover:text-zinc-300 transition-colors uppercase tracking-[0.3em] border border-red-600 px-3 py-1 bg-black/50 animate-pulse">
           &lt; Return_to_Mainframe
         </Link>
         <div className="text-[10px] text-red-600 uppercase tracking-widest animate-pulse">

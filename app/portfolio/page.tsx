@@ -22,34 +22,31 @@ export default function PortfolioPage() {
       ></div>
       
        {/* NAV OVERLAY */}
-        <nav className="absolute top-0 w-full p-6 flex justify-between items-center z-20">
-        <Link href="/" className="text-[10px] text-zinc-500 hover:text-red-600 transition-colors uppercase tracking-[0.3em] border border-zinc-800 px-3 py-1 bg-black/50">
+        <div className="absolute top-0 w-full p-6 flex justify-between items-center z-20">
+        <Link href="/" className="text-[10px] text-zinc-500 hover:text-zinc-300 transition-colors uppercase tracking-[0.3em] border border-red-600 px-3 py-1 bg-black/50 animate-pulse">
           &lt; Return_to_Mainframe
         </Link>
           <div className="text-[10px] text-zinc-600 uppercase tracking-widest">
             Profile_ID: <span className="text-zinc-300 underline">Mochajoe</span>
           </div>
-        </nav>
+        </div>
 
-      <div className="relative z-10 max-w-5xl mx-auto p-6 md:p-16 space-y-16">
-        
-       
-
-       {/* HEADER SECTION */}
+<div className="relative z-10 max-w-5xl mx-auto p-6 pt-24 md:pt-32 md:p-16 space-y-16">
+         {/* HEADER SECTION */}
 <header className="flex flex-col md:flex-row items-center gap-12">
   <div className="relative group w-fit"> {/* w-fit ensures the whole thing hugs the image */}
     
     {/*Adds top-right and bottom-left for a full wrap) */}
-    <div className="absolute top-0 right-0 w-4 h-4 border-t-2 border-r-2 border-red-600 z-30 animate-pulse"></div>
-    <div className="absolute bottom-0 left-0 w-4 h-4 border-b-2 border-l-2 border-red-600 z-30 animate-pulse"></div>
+    <div className="absolute top-0 right-0 w-6 h-6 border-t-4 border-r-4 border-red-600 z-30 animate-pulse"></div>
+    <div className="absolute bottom-0 left-0 w-6 h-6 border-b-4 border-l-4 border-red-600 z-30 animate-pulse"></div>
 
     {/* 3. THE IMAGE CONTAINER */}
-    <div className="h-60 border-2 border-zinc-800 bg-black overflow-hidden relative">
-      <img
-        src="/me-2.jpeg" 
-        alt="Joseph Ducharme"
-        className="h-75 w-75 grayscale hover:grayscale-0 transition-all duration-500 object-cover"
-      />
+    <div className="h-75 w-40 border-2 border-zinc-800 bg-black overflow-hidden relative">
+  <img
+    src="/me-3.jpeg"
+    alt="Joseph Ducharme"
+    className="h-full w-full hover:grayscale transition-all duration-500 object-cover"
+  />
       
       {/* 4. OVERLAY SCANLINE (Adds to the NASA vibe) */}
       <div className="absolute inset-0 bg-linear-to-b from-transparent via-white/5 to-transparent h-1/2 w-full animate-scan opacity-20 pointer-events-none"></div>
@@ -81,33 +78,6 @@ export default function PortfolioPage() {
     <h2 className="text-red-600 font-bold uppercase tracking-widest text-sm sticky top-24">
       Mission_Log
     </h2>
-    
-    {/* Buttons moved here and made bigger */}
-    <div className="flex flex-col gap-3 sticky top-36">
-      <a 
-        href="https://github.com/its-mocha" 
-        target="_blank" 
-        className="flex items-center justify-between group border border-zinc-800 bg-zinc-950/50 px-4 py-3 hover:border-red-600 transition-all duration-300"
-      >
-        <div className="flex items-center gap-3">
-          <Github className="w-5 h-5 text-zinc-500 group-hover:text-white transition-colors" />
-          <span className="text-xs uppercase font-bold tracking-widest group-hover:text-white">GitHub</span>
-        </div>
-        <ExternalLink className="w-3 h-3 text-zinc-700 group-hover:text-red-600" />
-      </a>
-
-      <a 
-        href="https://linkedin.com/in/itsmocha" 
-        target="_blank" 
-        className="flex items-center justify-between group border border-zinc-800 bg-zinc-950/50 px-4 py-3 hover:border-red-600 transition-all duration-300"
-      >
-        <div className="flex items-center gap-3">
-          <Linkedin className="w-5 h-5 text-zinc-500 group-hover:text-white transition-colors" />
-          <span className="text-xs uppercase font-bold tracking-widest group-hover:text-white">LinkedIn</span>
-        </div>
-        <ExternalLink className="w-3 h-3 text-zinc-700 group-hover:text-red-600" />
-      </a>
-    </div>
   </div>
 
   <div className="md:col-span-2 space-y-8 text-zinc-400 leading-relaxed text-sm font-sans">
@@ -170,7 +140,34 @@ export default function PortfolioPage() {
           <div>
              <h3 className="text-zinc-200 font-bold mb-4 text-[15px] uppercase tracking-widest">Education</h3>
              <p className="text-[12px] font-bold">B.S. Computer Science <span className="text-zinc-600 text-[12px] font-normal">// SNHU</span></p>
-          </div>
+
+ </div> {/* Buttons */}
+    <div className="flex flex-row gap-3 sticky top-36">
+      <a 
+        href="https://github.com/its-mocha" 
+        target="_blank" 
+        className="flex items-center justify-between group border border-zinc-800 bg-zinc-950/50 px-4 py-3 hover:border-red-600 transition-all duration-300"
+      >
+        <div className="flex items-center gap-3">
+          <Github className="w-5 h-5 text-zinc-500 group-hover:text-white transition-colors" />
+          <span className="text-xs uppercase font-bold tracking-widest group-hover:text-white">GitHub</span>
+        </div>
+        <ExternalLink className="w-3 h-3 text-zinc-700 group-hover:text-red-600" />
+      </a>
+
+      <a 
+        href="https://linkedin.com/in/itsmocha" 
+        target="_blank" 
+        className="flex items-center justify-between group border border-zinc-800 bg-zinc-950/50 px-4 py-3 hover:border-red-600 transition-all duration-300"
+      >
+        <div className="flex items-center gap-3">
+          <Linkedin className="w-5 h-5 text-zinc-500 group-hover:text-white transition-colors" />
+          <span className="text-xs uppercase font-bold tracking-widest group-hover:text-white">LinkedIn</span>
+        </div>
+        <ExternalLink className="w-3 h-3 text-zinc-700 group-hover:text-red-600" />
+      </a>
+
+    </div>
           <div>
              <h3 className="text-zinc-200 font-bold mb-4 text-[15px] uppercase tracking-widest">Certifications</h3>
              <p className="text-[12px] font-bold text-red-600">CompTIA Security+ <span className="text-zinc-400 text-[10px] font-normal uppercase italic tracking-tighter">// In Progress 2026</span></p>
