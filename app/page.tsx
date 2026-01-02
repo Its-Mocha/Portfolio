@@ -64,11 +64,9 @@ export default function LandingPage() {
 </div>
           
           {/* MODULE GRID */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-1">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-1">
             
-            
-
-            {/* PORTFOLIO MODULE */}
+          {/* PORTFOLIO MODULE */}
             <Link href="/portfolio" className="group bg-zinc-950/80 border border-zinc-800 p-8 hover:bg-red-950/10 hover:border-red-600 transition-all">
               <span className="text-red-600 text-xs mb-2 block font-bold">01</span>
               <h2 className="text-xl font-bold uppercase group-hover:tracking-widest transition-all">Portfolio</h2>
@@ -86,9 +84,18 @@ export default function LandingPage() {
               </p>
             </Link>
 
+             {/*ISS Module */}
+            <Link href="/iss" className="group bg-zinc-950/80 border border-zinc-800 p-8 hover:bg-red-950/10 hover:border-red-600 transition-all">
+              <span className="text-red-600 text-xs mb-2 block font-bold">03</span>
+              <h2 className="text-xl font-bold uppercase group-hover:tracking-widest transition-all">ISS Tracker</h2>
+              <p className="text-zinc-500 text-[10px] mt-4 leading-relaxed uppercase tracking-tighter">
+                Real-time ISS Position / Orbit Data / Live Tracking
+              </p>
+            </Link>
+
             {/* AI MODULE */}
             <a href="https://ai.mochajoe.dev" target="_blank" rel="noopener noreferrer" className="group bg-zinc-950/80 border border-zinc-800 p-8 hover:bg-red-950/10 hover:border-red-600 transition-all">
-              <span className="text-red-600 text-xs mb-2 block font-bold">03</span>
+              <span className="text-red-600 text-xs mb-2 block font-bold">04</span>
               <h2 className="text-xl font-bold uppercase group-hover:tracking-widest transition-all">AI Terminal</h2>
               <p className="text-zinc-500 text-[10px] mt-4 leading-relaxed uppercase tracking-tighter">
                 LLM Integration / Heuristic Processing / Neural Link
